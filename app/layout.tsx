@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
+  icons: { icon: '/favicon.png', apple: '/eunoema-logo.png' },
   metadataBase: new URL('https://www.eunoema.com'),
   title: {
     default: 'Eunoema | A clearer plan for your money',
@@ -42,10 +45,10 @@ export default function RootLayout({
       <body>
         <header className="site-header">
           <div className="shell header-inner">
-            <a className="brand" href="/" aria-label="Eunoema home">
-              <span className="brand-mark" aria-hidden="true">E</span>
+            <Link className="brand" href="/" aria-label="Eunoema home">
+              <Image className="brand-mark" src="/eunoema-logo.png" alt="" width={44} height={44} />
               <span>Eunoema</span>
-            </a>
+            </Link>
             <nav aria-label="Primary navigation">
               <a href="/privacy">Privacy</a>
               <a href="/support">Support</a>
@@ -56,10 +59,10 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="shell footer-inner">
             <div>
-              <a className="brand footer-brand" href="/">
-                <span className="brand-mark" aria-hidden="true">E</span>
+              <Link className="brand footer-brand" href="/">
+                <Image className="brand-mark" src="/eunoema-logo.png" alt="" width={44} height={44} />
                 <span>Eunoema</span>
-              </a>
+              </Link>
               <p>Developed by Soli Deo Software.</p>
             </div>
             <div className="footer-links">

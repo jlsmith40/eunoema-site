@@ -1,21 +1,21 @@
 const features = [
   {
     number: '01',
-    title: 'Plan with context',
+    title: 'Plan around your pay',
     description:
-      'See pay periods, obligations, everyday spending, savings, and debt as one connected plan.',
+      'Organize income from one or several jobs alongside bills and everyday expenses. Set aside money for upcoming expenses.',
   },
   {
     number: '02',
-    title: 'Stay current',
+    title: 'Know where you stand',
     description:
-      'Compare the plan with real account balances and transactions without losing the long-term view.',
+      'See your account balances and spending at a glance. Use Budget Check-In to review each pay period and adjust your plan.',
   },
   {
     number: '03',
-    title: 'Make it yours',
+    title: 'Make room for your goals',
     description:
-      'Choose the tools, accounts, priorities, and appearance that fit the way you manage money.',
+      'Balance today’s expenses with savings, debt, and the priorities that matter to you.',
   },
 ];
 
@@ -24,16 +24,15 @@ export default function Home() {
     <main>
       <section className="hero shell">
         <div className="hero-copy">
-          <p className="eyebrow">Personal budgeting, thoughtfully connected</p>
+          <p className="eyebrow">Eunoema for iPhone and Mac</p>
           <h1>A clearer plan for your money.</h1>
           <p className="lede">
-            Eunoema brings paychecks, bills, spending, savings, debt, and account
-            balances into one adaptable budget, so every decision starts with the
-            full picture.
+            Bring paychecks, bills, everyday spending, and savings together.
+            Plan around regular hours, rotating shifts, or more than one job.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="/privacy">
-              Read the privacy policy
+            <a className="button primary" href="#features">
+              Explore Eunoema
             </a>
             <a className="button secondary" href="/support">
               Contact support
@@ -41,43 +40,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="plan-card" aria-label="Example budget overview">
-          <div className="plan-card-topline">
-            <span>Budget overview</span>
-            <span className="status-dot">On track</span>
+        <div className="dashboard-preview" role="img" aria-label="Sample Eunoema dashboard with a checking and savings balance of $4,280, Budget Check-In, and remaining grocery and transport budgets.">
+          <div className="dashboard-heading"><h2>Dashboard</h2><span>September 1 to 15</span></div>
+          <div className="balance-card">
+            <span>Checking &amp; savings</span>
+            <strong>$4,280.00</strong>
+            <div className="balance-details">
+              <div><span>Checking</span><strong>$2,780.00</strong></div>
+              <div><span>Savings</span><strong>$1,500.00</strong></div>
+              <div><span>Next paycheck</span><strong>September 15</strong></div>
+            </div>
           </div>
-          <div className="plan-amount">
-            <span>Remaining this period</span>
-            <strong>$1,284</strong>
+          <div className="checkin-card">
+            <span className="checkin-icon" aria-hidden="true">✓</span>
+            <div><h3>Budget Check-In</h3><p>Review your plan for this pay period.</p></div>
           </div>
-          <div className="plan-bar" aria-hidden="true">
-            <span />
-          </div>
-          <div className="plan-grid">
-            <div>
-              <span>Obligations</span>
-              <strong>$816</strong>
-            </div>
-            <div>
-              <span>Everyday spending</span>
-              <strong>$420</strong>
-            </div>
-            <div>
-              <span>Future goals</span>
-              <strong>$350</strong>
-            </div>
-            <div>
-              <span>Available</span>
-              <strong className="positive">$514</strong>
-            </div>
+          <div className="spending-grid">
+            <div className="spending-card"><h3>Groceries</h3><strong>$245.00</strong><span>remaining of $400</span><div className="spending-track"><span style={{ width: '61.25%' }} /></div></div>
+            <div className="spending-card"><h3>Transportation</h3><strong>$120.00</strong><span>remaining of $180</span><div className="spending-track"><span style={{ width: '66.67%' }} /></div></div>
           </div>
         </div>
       </section>
 
-      <section className="principles shell" aria-labelledby="principles-title">
+      <section id="features" className="principles shell" aria-labelledby="principles-title">
         <div className="section-heading">
-          <p className="eyebrow">Built for real life</p>
-          <h2 id="principles-title">Your budget should adapt to you.</h2>
+          <h2 id="principles-title">Keep your budget in one place.</h2>
         </div>
         <div className="feature-grid">
           {features.map((feature) => (
@@ -92,16 +79,15 @@ export default function Home() {
 
       <section className="privacy-callout shell">
         <div>
-          <p className="eyebrow">Privacy by design</p>
-          <h2>Your financial life is personal.</h2>
+          <h2>You choose what to connect.</h2>
           <p>
             Eunoema does not sell personal information or use financial data for
             advertising. You choose which permissions and financial connections
-            to enable.
+            to enable. Bank sync is optional.
           </p>
         </div>
         <a className="text-link" href="/privacy">
-          See how information is handled <span aria-hidden="true">→</span>
+          Read the privacy policy
         </a>
       </section>
     </main>
