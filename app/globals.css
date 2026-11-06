@@ -143,10 +143,10 @@ h3 { font-size: 1.35rem; font-weight: 680; }
 .privacy-callout p:not(.eyebrow) { max-width: 680px; margin: 20px 0 0; color: var(--muted); }
 .text-link { color: var(--blue-soft); font-weight: 750; white-space: nowrap; }
 
-.site-footer { border-top: 1px solid #d9ddd0; background: #eeebe3; }
+.site-footer { --muted: #596253; border-top: 1px solid #d9ddd0; background: #eeebe3; }
 .footer-inner { display: flex; justify-content: space-between; gap: 40px; padding-block: 58px; }
 .footer-brand { margin-bottom: 14px; }
-.footer-inner p, .copyright { color: #677061; font-size: 0.86rem; }
+.footer-inner p, .copyright { color: var(--muted); font-size: 0.86rem; }
 .footer-inner p { margin: 0; }
 .footer-links { display: flex; flex-wrap: wrap; align-content: flex-start; justify-content: flex-end; gap: 14px 28px; color: var(--muted); font-size: 0.9rem; }
 .copyright { border-top: 1px solid #d9ddd0; padding-block: 20px 34px; }
