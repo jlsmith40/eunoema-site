@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
           <strong>August 28, 2026</strong>
           <br />
           Last updated
-          <strong>August 28, 2026</strong>
+          <strong>November 11, 2026</strong>
         </aside>
 
         <article className="legal-content">
@@ -95,6 +95,33 @@ export default function PrivacyPolicy() {
               issue, and any attachments you choose to send.
             </p>
 
+            <h3>Banner ads and privacy choices</h3>
+            <p>
+              The ad-supported iPhone and iPad app uses Google AdMob for small
+              banner ads and Google’s User Messaging Platform for privacy choices.
+              Google may process IP-derived approximate location, device or
+              app identifiers, ad impressions and interactions, and diagnostic
+              and performance information to deliver and measure ads, prevent
+              fraud, and maintain its services.
+            </p>
+            <p>
+              Eunoema does not send your budget entries, account balances,
+              transactions, calendar contents, or Eunoema account ID to Google
+              for advertising. Eunoema requests non-personalized ads, does not
+              request Apple’s tracking permission, and disables Google’s
+              publisher first-party ID and device location collection. These
+              settings do not eliminate all technical data collection, including
+              IP addresses needed to communicate with Google.
+            </p>
+            <p>
+              Ads wait for Google’s privacy check and any required consent form.
+              Where available, you can revisit your choices under Account →
+              Ad privacy choices. If that check fails, ads remain paused.
+              Founding Members and accounts with the one-time Remove Ads
+              purchase receive no banner ads. Native Mac does not currently
+              use Google’s advertising SDK.
+            </p>
+
             <h3>Website information</h3>
             <p>
               The Eunoema website does not use advertising trackers or
@@ -118,8 +145,9 @@ export default function PrivacyPolicy() {
               <li>Comply with applicable legal obligations.</li>
             </ul>
             <p>
-              Eunoema does not sell personal information and does not use
-              financial information for targeted advertising.
+              Eunoema does not use your financial information for targeted
+              advertising. Ad-related processing and available privacy choices
+              are described above.
             </p>
           </section>
 
@@ -131,6 +159,12 @@ export default function PrivacyPolicy() {
               Relevant providers include:
             </p>
             <ul>
+              <li>
+                <strong>Google AdMob and User Messaging Platform</strong>, for
+                banner advertising and consent management on iPhone and iPad.
+                See <a href="https://policies.google.com/privacy" rel="noreferrer">Google’s privacy policy</a>{' '}
+                and <a href="https://policies.google.com/technologies/partner-sites" rel="noreferrer">how Google uses information from apps that use its services</a>.
+              </li>
               <li>
                 <strong>Stripe Financial Connections</strong>, when you choose
                 to connect an account, for connection authorization and delivery
