@@ -243,6 +243,11 @@ export default function PrivacyPolicy() {
               unavailable. Encrypted authorization details are kept only while
               that cleanup is pending. A hashed request receipt is
               kept for up to 30 days so an interrupted request can be retried.
+              For a purchased Remove Ads entitlement, we retain only a hashed
+              sign-in identity, an opaque account reference, and the purchase
+              reference so the same person can restore the purchase after
+              recreating an account and others cannot claim it. This does not
+              retain the account profile, budget, or sign-in credentials.
               Apple retains its purchase records under its own policies;
               deleting your account does not request a refund.
             </p>
