@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
           <strong>August 28, 2026</strong>
           <br />
           Last updated
-          <strong>November 11, 2026</strong>
+          <strong>November 12, 2026</strong>
         </aside>
 
         <article className="legal-content">
@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
 
             <h3>Banner ads and privacy choices</h3>
             <p>
-              The ad-supported iPhone and iPad app uses Google AdMob for small
+              The ad-supported iPhone app uses Google AdMob for small
               banner ads and Google’s User Messaging Platform for privacy choices.
               Google may process IP-derived approximate location, device or
               app identifiers, ad impressions and interactions, and diagnostic
@@ -161,7 +161,8 @@ export default function PrivacyPolicy() {
             <ul>
               <li>
                 <strong>Google AdMob and User Messaging Platform</strong>, for
-                banner advertising and consent management on iPhone and iPad.
+                banner advertising and consent management on iPhone. The native
+                Mac app does not show banner ads.
                 See <a href="https://policies.google.com/privacy" rel="noreferrer">Google’s privacy policy</a>{' '}
                 and <a href="https://policies.google.com/technologies/partner-sites" rel="noreferrer">how Google uses information from apps that use its services</a>.
               </li>
@@ -234,9 +235,16 @@ export default function PrivacyPolicy() {
               at <a href="mailto:privacy@eunoema.com">privacy@eunoema.com</a>.
             </p>
             <p>
-              Local app information can also be removed by deleting applicable
-              records or the app. Information synchronized through iCloud may
-              remain subject to your Apple account and iCloud settings.
+              In Eunoema, open Account and choose Delete account to permanently
+              delete your Eunoema account and budget from this device and
+              iCloud. Close Eunoema on other devices first. An interrupted
+              deletion can be resumed in the app; keep the app installed until
+              it finishes. Provider cleanup is retried if a service is
+              unavailable. Encrypted authorization details are kept only while
+              that cleanup is pending. A hashed request receipt is
+              kept for up to 30 days so an interrupted request can be retried.
+              Apple retains its purchase records under its own policies;
+              deleting your account does not request a refund.
             </p>
           </section>
 
